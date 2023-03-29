@@ -49,21 +49,6 @@
 .buttonSearch:hover{
     transform: scale(1.1);
 }
-
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 500px;
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: inset -31px 31px 62px #a1a1a1,  inset 31px -31px 62px #ffffff;
-
-    transition: width 1s 0.5s;
-}
-
-/**/
 .card {
     width: 500px;
     height: 300px;
@@ -76,19 +61,19 @@
     overflow: hidden;
     border-radius: 20px;
     margin-top: 50px;
-  }
+}
   
-  .card h2,span {
+.card h2,span {
     z-index: 1;
     color: white;
-  }
+}
 
-  .card h2{
+.card h2{
     margin: 16px 0;
     font-size: 39px;
-  }
+}
   
-  .card::before {
+.card::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -96,28 +81,23 @@
     height: 230%;
     animation: rotBGimg 4s linear infinite;
     transition: all 0.2s linear;
-  }
-  
-  @keyframes rotBGimg {
+}
+@keyframes rotBGimg {
     from {
       transform: rotate(0deg);
     }
-  
     to {
       transform: rotate(360deg);
     }
-  }
+}
   
-  .card::after {
+.card::after {
     content: '';
     position: absolute;
     background: #465972;
     inset: 5px;
     border-radius: 15px;
-  }  
-/**/
-
-
+}  
 @media (max-width: 620px) {
     .title{
         font-size: 60px;
@@ -132,7 +112,6 @@
         transition: 0;
     }
 }
-
 
 @keyframes flipTitle {
     from{
